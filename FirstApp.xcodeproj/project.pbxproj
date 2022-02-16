@@ -36,6 +36,8 @@
 		CD84CCB427B64DDA00229505 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84CCB327B64DDA00229505 /* NetworkRequest.swift */; };
 		CD84CCB627B77D7800229505 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84CCB527B77D7800229505 /* NetworkDataFetch.swift */; };
 		CD84CCB827B77E4C00229505 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84CCB727B77E4C00229505 /* WeatherModel.swift */; };
+		CD84CCBA27BBDB2400229505 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84CCB927BBDB2400229505 /* OnboardingViewController.swift */; };
+		CD84CCBD27BCE5A500229505 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84CCBC27BCE5A500229505 /* OnboardingCollectionViewCell.swift */; };
 		CD8EC3A5279E8DB400948FB1 /* RepsWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC3A4279E8DB400948FB1 /* RepsWorkoutViewController.swift */; };
 		CD8EC3A8279ED09F00948FB1 /* WorkoutParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC3A7279ED09F00948FB1 /* WorkoutParametersView.swift */; };
 		CD8EC3AA27A087A600948FB1 /* OkCancelAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8EC3A927A087A600948FB1 /* OkCancelAlert.swift */; };
@@ -83,6 +85,8 @@
 		CD84CCB327B64DDA00229505 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		CD84CCB527B77D7800229505 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
 		CD84CCB727B77E4C00229505 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		CD84CCB927BBDB2400229505 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CD84CCBC27BCE5A500229505 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		CD8EC3A4279E8DB400948FB1 /* RepsWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepsWorkoutViewController.swift; sourceTree = "<group>"; };
 		CD8EC3A7279ED09F00948FB1 /* WorkoutParametersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutParametersView.swift; sourceTree = "<group>"; };
 		CD8EC3A927A087A600948FB1 /* OkCancelAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkCancelAlert.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 				CD8EC3A4279E8DB400948FB1 /* RepsWorkoutViewController.swift */,
 				CD8EC3AB27A1A6E400948FB1 /* TimerWorkoutViewController.swift */,
 				CD958D3027AEB9530030E65D /* SettingViewController.swift */,
+				CD84CCB927BBDB2400229505 /* OnboardingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 		CD0A33D527916BEB00324070 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CD84CCBB27BCE56C00229505 /* OnboardingVC */,
 				CD958D2C27AD67B40030E65D /* StatisticsVC */,
 				CD958D2627ABDAD90030E65D /* ProfileVC */,
 				CD8EC3A6279ECE0C00948FB1 /* StartWorkoutVC */,
@@ -269,6 +275,14 @@
 				CD84CCB527B77D7800229505 /* NetworkDataFetch.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		CD84CCBB27BCE56C00229505 /* OnboardingVC */ = {
+			isa = PBXGroup;
+			children = (
+				CD84CCBC27BCE5A500229505 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = OnboardingVC;
 			sourceTree = "<group>";
 		};
 		CD8EC3A6279ECE0C00948FB1 /* StartWorkoutVC */ = {
@@ -423,6 +437,7 @@
 				CD59A12F27A5B3EF00ED125D /* UILabel + Extension.swift in Sources */,
 				CD0A33FC279A9C9300324070 /* ProfileViewController.swift in Sources */,
 				CD0A33C3279161C800324070 /* MainViewController.swift in Sources */,
+				CD84CCBA27BBDB2400229505 /* OnboardingViewController.swift in Sources */,
 				CD59A12D27A5A2BE00ED125D /* CustomAlert.swift in Sources */,
 				CD0A33BF279161C800324070 /* AppDelegate.swift in Sources */,
 				CDC890BF27B538C90032452D /* Notifications.swift in Sources */,
@@ -436,6 +451,7 @@
 				CD0A33F1279752D200324070 /* NewWorkoutViewController.swift in Sources */,
 				CD0A33C1279161C800324070 /* SceneDelegate.swift in Sources */,
 				CD0A33EF2795876D00324070 /* WeatherView.swift in Sources */,
+				CD84CCBD27BCE5A500229505 /* OnboardingCollectionViewCell.swift in Sources */,
 				CD958D3127AEB9530030E65D /* SettingViewController.swift in Sources */,
 				CD8EC3AA27A087A600948FB1 /* OkCancelAlert.swift in Sources */,
 				CD958D2227A7CC410030E65D /* StatisticTableViewCell.swift in Sources */,
