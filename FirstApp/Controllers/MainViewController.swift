@@ -92,6 +92,11 @@ class MainViewController: UIViewController {
         userPhotoImageView.layer.cornerRadius = userPhotoImageView.frame.width / 2
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        showOnboarding()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -192,7 +197,16 @@ class MainViewController: UIViewController {
                 self.alertOk(title: "Error", message: "No data weather")
             }
         }
-        
+    }
+    
+    private func showOnboarding() {
+        let userDefaults = UserDefaults.standard
+        let onBoardingWasViewed = userDefaults.bool(forKey: "OnBoardingWasViewed")
+        if onBoardingWasViewed == false {
+            let onboardingViewController = OnboardingViewController()
+            onboardingViewController.modalPresentationStyle = .fullScreen
+            present(onboardingViewController, animated: false)
+        }
     }
 }
 
@@ -312,5 +326,11 @@ extension MainViewController {
             noWorkoutImageView.topAnchor.constraint(equalTo: workoutTodayLabel.bottomAnchor, constant: 0)
         ])
     }
-    
 }
+
+extension UIViewController: UIAdaptivePresentationControllerDelegate {
+        public func presentationControllerDidDismiss( _ presentationController: UIPresentationController) {
+                viewWillAppear(true)
+        }
+    }
+
